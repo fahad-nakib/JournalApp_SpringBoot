@@ -24,6 +24,9 @@ public class UserService {
         user.setRoles(Arrays.asList("USER"));
         userRepository.save(user);
     }
+    public void saveNewEntry(User user){
+        userRepository.save(user);
+    }
 
     public List<User> getAll(){
         return userRepository.findAll();
